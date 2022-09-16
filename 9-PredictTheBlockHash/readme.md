@@ -15,10 +15,9 @@
 
 本题直接用remix即可，过程如图
 
-![]()
+![](https://github.com/Cat2Boy/CapturetheEther/blob/main/9-PredictTheBlockHash/img/1.png?raw=true)
 
 
-```
-注：
+
+#### 注：
 block.blockhash(uint blockNumber)returns(bytes.32)：指定区块的区块哈希-一仅可用于最新的 256个区块且不包括当前区块；而b1ocks从0.4.22版本开始已经不推荐使用，由blockhash(uint blockNumber) 代替
-```

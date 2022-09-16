@@ -73,7 +73,23 @@ BankbalanceOf[攻击合约] = 0 ——> totalSupply/2
 
 ### 运行步骤
 
+![](https://github.com/Cat2Boy/CapturetheEther/blob/main/20-TokenBank/img/1.jpg?raw=true)
 
+![](https://github.com/Cat2Boy/CapturetheEther/blob/main/20-TokenBank/img/2.png?raw=true)
+
+![](https://github.com/Cat2Boy/CapturetheEther/blob/main/20-TokenBank/img/3.png?raw=true)
+
+![](https://github.com/Cat2Boy/CapturetheEther/blob/main/20-TokenBank/img/4.png?raw=true)
+
+![](https://github.com/Cat2Boy/CapturetheEther/blob/main/20-TokenBank/img/5.png?raw=true)
+
+![](https://github.com/Cat2Boy/CapturetheEther/blob/main/20-TokenBank/img/6.png?raw=true)
+
+![](https://github.com/Cat2Boy/CapturetheEther/blob/main/20-TokenBank/img/7.png?raw=true)
+
+![](https://github.com/Cat2Boy/CapturetheEther/blob/main/20-TokenBank/img/8.png?raw=true)
+
+![](https://github.com/Cat2Boy/CapturetheEther/blob/main/20-TokenBank/img/9.png?raw=true)
 ## 结果
 
 调用攻击合约的attack方法，重入攻击，最终完成TokenbalanceOf[Bankaddress] = 0的操作。
