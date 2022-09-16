@@ -1,0 +1,4 @@
+export const bytecode = '6080604052633b9aca0034101561001557600080fd5b60eb806100236000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806312065fe0146037578063cbf0b0c0146053575b600080fd5b603d6094565b6040518082815260200191505060405180910390f35b609260048036036020811015606757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050609c565b005b600047905090565b8073ffffffffffffffffffffffffffffffffffffffff16fffea26469706673582212208277a099fbcdc5839e3a1a8b698c64251b9acc8bcafc945767ce45291a3ecd4364736f6c63430007060033'
+
+export const contractabi = '[{"inputs":[],"stateMutability":"payable","type":"constructor"},{"inputs":[],"name":"getBalance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"addr","type":"address"}],"name":"kill","outputs":[],"stateMutability":"nonpayable","type":"function"}]'
+

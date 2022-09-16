@@ -1,0 +1,48 @@
+pragma solidity ^0.4.21;
+
+contract DonationChallenge {
+    struct Donation {
+        uint256 timestamp;
+        uint256 etherAmount;
+    }
+    Donation[] public donations;
+
+    address public owner;
+
+    function DonationChallenge() public payable {
+        require(msg.value == 1 ether);
+        
+        owner = msg.sender;
+    }
+    
+    function isComplete() public view returns (bool) {
+        return address(this).balance == 0;
+    }
+    function getBalance() public view returns (uint256) {
+        return address(this).balance;
+    }
+    function getowner() public view returns (address) {
+        return owner;
+    }
+
+    function donate(uint256 etherAmount) public payable {
+        // amount is in ether, but msg.value is in wei
+        uint256 scale = 10**18 * 1 ether;
+        require(msg.value == etherAmount / scale);
+
+        Donation donation;
+        donation.timestamp = now;
+        donation.etherAmount = etherAmount;
+
+        donations.push(donation);
+    }
+    function kill() public payable{
+        selfdestruct(msg.sender);
+    }
+
+    function withdraw() public {
+        require(msg.sender == owner);
+        
+        msg.sender.transfer(address(this).balance);
+    }
+}
